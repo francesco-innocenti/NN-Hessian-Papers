@@ -43,6 +43,10 @@ finds that, in contrast to previous findings on small networks, the Hessian has
 still some significant eigendensity at the end of training for ResNets trained 
 on ImageNet.
 
+[How noise affects the Hessian spectrum in overparameterized neural networks
+](https://arxiv.org/abs/1910.00195): Shows that SGD decreases the trace of the
+Hessian.
+
 [Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability
 ](https://arxiv.org/abs/2103.00065): For full-batch GD, this influential paper 
 demonstrates across a variety of tasks, architectures and hyperparameters that 
@@ -68,6 +72,7 @@ Introduces a fantastic open-source library for efficient computation of a
 number of Hessian metrics (top eigenvalues, trace and eigendensity) for deep 
 neural networks.
 
+
 ## Random matrix theory approaches
 
 [The Loss Surfaces of Multilayer Networks
@@ -82,15 +87,8 @@ neural networks.
 [Beyond Random Matrix Theory for Deep Networks
 ](https://arxiv.org/abs/2006.07721)
 
-[Beyond Random Matrix Theory for Deep Networks
-](https://arxiv.org/abs/2006.07721)
-
 [Hessian Eigenspectra of More Realistic Nonlinear Models
 ](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html)
-
-[How noise affects the Hessian spectrum in overparameterized neural networks
-](https://arxiv.org/abs/1910.00195): Shows that SGD decreases the trace of the
-Hessian.
 
 
 ## Other theoretical works
