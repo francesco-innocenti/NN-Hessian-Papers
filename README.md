@@ -93,6 +93,12 @@ neural networks.
 
 ## Other theoretical works
 
+[Towards Understanding Generalization of Deep
+Learning: Perspective of Loss Landscapes](https://arxiv.org/abs/1706.10239):
+For one-hidden-layer networks, this shows that low-complexity solutions defined
+by small change in the variance of the network map across inputs have a small 
+Hessian norm.
+
 [Sharp Minima Can Generalize For Deep Nets
 ](https://proceedings.mlr.press/v70/dinh17b): A popular paper showing that 
 using the flatness or sharpness of minima as a measure of generalisation is 
