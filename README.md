@@ -3,6 +3,8 @@
 > respect to model parameters is a central object of study in deep learning for 
 > understanding overparameterisation, optimisation and generalisation.
 
+
+## Empirical studies
 [Identifying and attacking the saddle point problem in high-dimensional non-convex optimization
 ](https://proceedings.neurips.cc/paper/2014/hash/17e23e50bedc63b4095e3d8204ce063b-Abstract.html):
 An influential paper highlighting the prevalence of saddle points, compared to 
@@ -41,15 +43,63 @@ finds that, in contrast to previous findings on small networks, the Hessian has
 still some significant eigendensity at the end of training for ResNets trained 
 on ImageNet.
 
+[Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability
+](https://arxiv.org/abs/2103.00065): For full-batch GD, this influential paper 
+demonstrates across a variety of tasks, architectures and hyperparameters that 
+the maximum eigenvalue of the Hessian (aka sharpness) rapidly increases at the
+start of training (progressive sharpening) and eventually hovers just above the 
+2/n threshold for GD convergence (edge of stability).
+
+[A Loss Curvature Perspective on Training Instability in Deep Learning
+](https://arxiv.org/abs/2110.04369): Investigates the impact of various
+hyperparameters including initialisation, normalisations and learning rate 
+warm-up on the sharpness during training, finding that all successful models 
+help to avoid or navigate out of high-curvature regions in favour of flatter
+ones where larger steps can be taken.
+
+[On the Maximum Hessian Eigenvalue and Generalization
+](https://proceedings.mlr.press/v187/kaur23a): A more modern and comprehensive 
+empirical investigation of the flatness hypothesis (flatter minima or small
+sharpness lead to better generalisation).
+
+[PyHessian: Neural Networks Through the Lens of the Hessian
+](https://ieeexplore.ieee.org/abstract/document/9378171?casa_token=yc32YU5jxsAAAAAA:v8JayGnZugoYAz1oRlQxQZlEq1pJgVnc_RhLeP32WGPaC9IeNDFfskQ-x06QYClBzHjw3Bb7):
+Introduces a fantastic open-source library for efficient computation of a 
+number of Hessian metrics (top eigenvalues, trace and eigendensity) for deep 
+neural networks.
+
+## Random matrix theory approaches
+
+[The Loss Surfaces of Multilayer Networks
+](https://proceedings.mlr.press/v38/choromanska15.html)
+
+[Geometry of Neural Network Loss Surfaces via Random Matrix Theory
+](https://proceedings.mlr.press/v70/pennington17a.html)
+
+[The Spectrum of the Fisher Information Matrix of a Single-Hidden-Layer Neural Network
+](https://proceedings.neurips.cc/paper/2018/hash/18bb68e2b38e4a8ce7cf4f6b2625768c-Abstract.html)
+
+[Beyond Random Matrix Theory for Deep Networks
+](https://arxiv.org/abs/2006.07721)
+
+[Beyond Random Matrix Theory for Deep Networks
+](https://arxiv.org/abs/2006.07721)
+
+[Hessian Eigenspectra of More Realistic Nonlinear Models
+](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html)
+
+[How noise affects the Hessian spectrum in overparameterized neural networks
+](https://arxiv.org/abs/1910.00195): Shows that SGD decreases the trace of the
+Hessian.
+
+
+## Other theoretical works
+
 [Sharp Minima Can Generalize For Deep Nets
 ](https://proceedings.mlr.press/v70/dinh17b): A popular paper showing that 
 using the flatness or sharpness of minima as a measure of generalisation is 
 problematic, since one can easily obtain models of equal generation but 
 arbitrarily different curvature due to inherent network symmetries.
-
-[How noise affects the Hessian spectrum in overparameterized neural networks
-](https://arxiv.org/abs/1910.00195): Shows that SGD decreases the trace of the
-Hessian
 
 [Vanishing Curvature and the Power of Adaptive Methods in Randomly Initialized Deep Networks
 ](https://arxiv.org/abs/2106.03763): Another insightful paper taking a fresh
@@ -63,12 +113,6 @@ linear networks depending on the *sum* of hidden layer widths. This is in
 contrast to the total number of parameters, which is proportional to the
 *squared* sum of widths.
 
-[PyHessian: Neural Networks Through the Lens of the Hessian
-](https://ieeexplore.ieee.org/abstract/document/9378171?casa_token=yc32YU5jxsAAAAAA:v8JayGnZugoYAz1oRlQxQZlEq1pJgVnc_RhLeP32WGPaC9IeNDFfskQ-x06QYClBzHjw3Bb7):
-Introduces a fantastic open-source library for efficient computation of a 
-number of Hessian metrics (top eigenvalues, trace and eigendensity) for deep 
-neural networks.
-
 [Analytic Characterization of the Hessian in Shallow ReLU Models: A Tale of Symmetry
 ](https://proceedings.neurips.cc/paper/2020/hash/3a61ed715ee66c48bacf237fa7bb5289-Abstract.html) & 
 [Analytic Study of Families of Spurious Minima in Two-Layer ReLU Neural Networks: A Tale of Symmetry II
@@ -81,16 +125,19 @@ projections can misidentify saddle points, proposing instead to slice it onto
 the minimum and maximum Hessian eigenvectors.
 
 [What Does It Mean to Be a Transformer? Insights from a Theoretical Hessian Analysis
-](https://arxiv.org/abs/2410.10986):
+](https://arxiv.org/abs/2410.10986)
 
 [The asymptotic spectrum of the Hessian of DNN throughout training
-](https://arxiv.org/abs/1910.02875):
+](https://arxiv.org/abs/1910.02875)
 
 [The Goldilocks Zone: Towards Better Understanding of Neural Network Loss Landscapes
 ](https://ojs.aaai.org/index.php/AAAI/article/view/4237)
 
-[Hessian Eigenspectra of More Realistic Nonlinear Models
-](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html)
 
-[A Loss Curvature Perspective on Training Instability in Deep Learning
-](https://arxiv.org/abs/2110.04369)
+## Singular learning theory
+
+[Deep Learning Is Singular, and That’s Good
+](https://ieeexplore.ieee.org/abstract/document/9812468)
+
+[Using Degeneracy in the Loss Landscape for Mechanistic Interpretability
+](https://arxiv.org/abs/2405.10927)
