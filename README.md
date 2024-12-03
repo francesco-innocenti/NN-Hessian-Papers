@@ -76,20 +76,29 @@ neural networks.
 ## Random matrix theory approaches
 
 [The Loss Surfaces of Multilayer Networks
-](https://proceedings.mlr.press/v38/choromanska15.html)
+](https://proceedings.mlr.press/v38/choromanska15.html): Shows that, under 
+some simplifying assumptions, the loss landscape of feedforward networks is
+equivalent to that of a spin-glass model, which for deep models effectively 
+means that all the local minima are close to the global minimum.
 
 [Geometry of Neural Network Loss Surfaces via Random Matrix Theory
-](https://proceedings.mlr.press/v70/pennington17a.html)
-
-[The Spectrum of the Fisher Information Matrix of a Single-Hidden-Layer Neural Network
-](https://proceedings.neurips.cc/paper/2018/hash/18bb68e2b38e4a8ce7cf4f6b2625768c-Abstract.html)
+](https://proceedings.mlr.press/v70/pennington17a.html): Derives an 
+approximation of the Hessian eigendensity under simplifying assumptions, 
+showing that below a certain critical energy value all critical points are 
+minima.
 
 [Beyond Random Matrix Theory for Deep Networks
-](https://arxiv.org/abs/2006.07721)
+](https://arxiv.org/abs/2006.07721): Shows that random matrix theoretical 
+distributions (including the Wigner semi-circle and Marcenko-Pastur) used to 
+model the Hessian spectrum do not match well empirical data at the end of 
+training.
 
 [Hessian Eigenspectra of More Realistic Nonlinear Models
-](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html)
-
+](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html):
+Derives the eigenspectrum of the Hessian for generalised generalised linear 
+models (G-GLMs), showing similarly to the above paper that the spectrum can 
+depart significantly from theoretical random matrix ensembles depending on the 
+data, model and loss.
 
 ## Other theoretical works
 
