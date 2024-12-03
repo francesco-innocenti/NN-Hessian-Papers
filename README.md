@@ -108,6 +108,11 @@ For one-hidden-layer networks, this shows that low-complexity solutions defined
 by small change in the variance of the network map across inputs have a small 
 Hessian norm.
 
+[The asymptotic spectrum of the Hessian of DNN throughout training
+](https://arxiv.org/abs/1910.02875): Characterises the Hessian spectrum at
+initialisation and during training in the NTK limit, and its first two 
+moments in the mean-field regime.
+
 [Sharp Minima Can Generalize For Deep Nets
 ](https://proceedings.mlr.press/v70/dinh17b): A popular paper showing that 
 using the flatness or sharpness of minima as a measure of generalisation is 
@@ -137,15 +142,17 @@ showing that the popular method of visualising the loss landscape on 2D random
 projections can misidentify saddle points, proposing instead to slice it onto
 the minimum and maximum Hessian eigenvectors.
 
+[The Hessian perspective into the Nature of Convolutional Neural Networks
+](https://arxiv.org/abs/2305.09088): Following the approach of [Singh et al. (2021)
+](https://proceedings.neurips.cc/paper/2021/hash/c900ced7451da79502d29aa37ebb7b60-Abstract.html),
+this paper ...
+
 [What Does It Mean to Be a Transformer? Insights from a Theoretical Hessian Analysis
-](https://arxiv.org/abs/2410.10986)
-
-[The asymptotic spectrum of the Hessian of DNN throughout training
-](https://arxiv.org/abs/1910.02875)
-
-[The Goldilocks Zone: Towards Better Understanding of Neural Network Loss Landscapes
-](https://ojs.aaai.org/index.php/AAAI/article/view/4237)
-
+](https://arxiv.org/abs/2410.10986): Following the approach of [Singh et al. (2021)
+](https://proceedings.neurips.cc/paper/2021/hash/c900ced7451da79502d29aa37ebb7b60-Abstract.html),
+this paper expresses the Hessian of a single self-attention layer, highlighting 
+its highly heterogeneous structure compared to standard feedforward and 
+convolutional architectures.
 
 ## Singular learning theory
 
