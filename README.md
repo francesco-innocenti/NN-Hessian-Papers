@@ -1,4 +1,4 @@
-# Neural Network Hessian Papers
+# 📑 Neural Network Hessian Papers
 > The Hessian matrix of neural networks or, more specifically, of the loss with 
 > respect to model parameters is a central object of study in deep learning for 
 > understanding overparameterisation, optimisation and generalisation.
@@ -42,10 +42,6 @@ scalable approximation of the Hessian eigendensity.
 finds that, in contrast to previous findings on small networks, the Hessian has 
 still some significant eigendensity at the end of training for ResNets trained 
 on ImageNet.
-
-[How noise affects the Hessian spectrum in overparameterized neural networks
-](https://arxiv.org/abs/1910.00195): Shows that SGD decreases the trace of the
-Hessian.
 
 [Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability
 ](https://arxiv.org/abs/2103.00065): For full-batch GD, this influential paper 
@@ -129,7 +125,9 @@ networks with standard initialisations also suffer from vanishing curvature.
 An insightful paper deriving a tight upper bound on the Hessian rank for deep
 linear networks depending on the *sum* of hidden layer widths. This is in 
 contrast to the total number of parameters, which is proportional to the
-*squared* sum of widths.
+*squared* sum of widths. See [The Hessian perspective into the Nature of 
+Convolutional Neural Networks](https://arxiv.org/abs/2305.09088) for an
+extension of these results to convolutional nets.
 
 [Analytic Characterization of the Hessian in Shallow ReLU Models: A Tale of Symmetry
 ](https://proceedings.neurips.cc/paper/2020/hash/3a61ed715ee66c48bacf237fa7bb5289-Abstract.html) & 
@@ -142,22 +140,9 @@ showing that the popular method of visualising the loss landscape on 2D random
 projections can misidentify saddle points, proposing instead to slice it onto
 the minimum and maximum Hessian eigenvectors.
 
-[The Hessian perspective into the Nature of Convolutional Neural Networks
-](https://arxiv.org/abs/2305.09088): Following the approach of [Singh et al. (2021)
-](https://proceedings.neurips.cc/paper/2021/hash/c900ced7451da79502d29aa37ebb7b60-Abstract.html),
-this paper ...
-
 [What Does It Mean to Be a Transformer? Insights from a Theoretical Hessian Analysis
 ](https://arxiv.org/abs/2410.10986): Following the approach of [Singh et al. (2021)
 ](https://proceedings.neurips.cc/paper/2021/hash/c900ced7451da79502d29aa37ebb7b60-Abstract.html),
 this paper expresses the Hessian of a single self-attention layer, highlighting 
 its highly heterogeneous structure compared to standard feedforward and 
 convolutional architectures.
-
-## Singular learning theory
-
-[Deep Learning Is Singular, and That’s Good
-](https://ieeexplore.ieee.org/abstract/document/9812468)
-
-[Using Degeneracy in the Loss Landscape for Mechanistic Interpretability
-](https://arxiv.org/abs/2405.10927)
