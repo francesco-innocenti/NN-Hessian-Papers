@@ -91,8 +91,8 @@ training.
 
 [Hessian Eigenspectra of More Realistic Nonlinear Models
 ](https://proceedings.neurips.cc/paper/2021/hash/a7d8ae4569120b5bec12e7b6e9648b86-Abstract.html):
-Derives the eigenspectrum of the Hessian for generalised generalised linear 
-models (G-GLMs), showing similarly to the above paper that the spectrum can 
+Derives the eigenspectrum of the Hessian for "generalised generalised linear 
+models" (G-GLMs), showing similarly to the above paper that the spectrum can 
 depart significantly from theoretical random matrix ensembles depending on the 
 data, model and loss.
 
@@ -112,7 +112,7 @@ moments in the mean-field regime.
 [Sharp Minima Can Generalize For Deep Nets
 ](https://proceedings.mlr.press/v70/dinh17b): A popular paper showing that 
 using the flatness or sharpness of minima as a measure of generalisation is 
-problematic, since one can easily obtain models of equal generation but 
+problematic, since one can easily obtain models of equal generalisation but 
 arbitrarily different curvature due to inherent network symmetries.
 
 [Vanishing Curvature and the Power of Adaptive Methods in Randomly Initialized Deep Networks
