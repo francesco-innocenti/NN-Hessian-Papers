@@ -68,6 +68,11 @@ Introduces a fantastic open-source library for efficient computation of a
 number of Hessian metrics (top eigenvalues, trace and eigendensity) for deep 
 neural networks.
 
+[Why Transformers Need Adam: A Hessian Perspective
+](https://arxiv.org/abs/2402.16788): Supporting the theoretical analysis of 
+[Ormaniec et al. (2024)](https://arxiv.org/abs/2410.10986), shows that training 
+transformers with SGD is much worse than Adam because of the block 
+heterogeneity of the Hessian.
 
 ## Random matrix theory approaches
 
@@ -146,3 +151,12 @@ the minimum and maximum Hessian eigenvectors.
 this paper expresses the Hessian of a single self-attention layer, highlighting 
 its highly heterogeneous structure compared to standard feedforward and 
 convolutional architectures.
+
+[Theoretical characterisation of the Gauss-Newton conditioning in Neural Networks
+](https://arxiv.org/abs/2411.02139): Derives tight bounds on the condition 
+number of the Gauss-Newton matrix of arbitrary deep linear networks, showing
+that many popular techniques to aid optimisation such as skip connections and
+batch normalisation improve landscape conditioning.
+
+[Neglected Hessian component explains mysteries in Sharpness regularization
+](https://arxiv.org/abs/2401.10809) 
