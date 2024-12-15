@@ -166,5 +166,5 @@ heterogeneity of the Hessian.
 [Super Consistency of Neural Network Landscapes and Learning Rate Transfer
 ](https://openreview.net/forum?id=rgwhJ7INtZ): Shows that the sharpness is 
 largely conserved ("super consistent") across network widths and depths in the 
-maximal update ($\mu$P) parameterisation, in contrast to the standard and 
+maximal update (μP) parameterisation, in contrast to the standard and 
 neural tangent kernel parameterisations.
