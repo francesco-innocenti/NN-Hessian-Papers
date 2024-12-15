@@ -162,3 +162,9 @@ neural networks.
 [Ormaniec et al. (2024)](https://arxiv.org/abs/2410.10986), this shows that 
 training transformers with SGD is much worse than Adam because of the block 
 heterogeneity of the Hessian.
+
+[Super Consistency of Neural Network Landscapes and Learning Rate Transfer
+](https://openreview.net/forum?id=rgwhJ7INtZ): Shows that the sharpness is 
+largely conserved ("super consistent") across network widths and depths in the 
+maximal update ($\mu$P) parameterisation, in contrast to the standard and 
+neural tangent kernel parameterisations.
