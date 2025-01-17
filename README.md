@@ -81,7 +81,7 @@ minima.
 
 [Beyond Random Matrix Theory for Deep Networks
 ](https://arxiv.org/abs/2006.07721): Shows that random matrix theoretical 
-distributions (including the Wigner semi-circle and Marcenko-Pastur) used to 
+distributions (including the Wigner semi-circle and Marchenko-Pastur) used to 
 model the Hessian spectrum do not match well empirical data at the end of 
 training.
 
