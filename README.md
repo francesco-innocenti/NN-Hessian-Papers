@@ -92,6 +92,9 @@ models" (G-GLMs), showing similarly to the above paper that the spectrum can
 depart significantly from theoretical random matrix ensembles depending on the 
 data, model and loss.
 
+[Universal characteristics of deep neural network loss surfaces from random matrix theory
+](https://iopscience.iop.org/article/10.1088/1751-8121/aca7f5/meta)
+
 
 ## Empirical studies
 [Identifying and attacking the saddle point problem in high-dimensional non-convex optimization
